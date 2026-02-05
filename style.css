@@ -1,0 +1,142 @@
+body {
+  transition: background-color 0.8s ease;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* NAVBAR - DEFAULT */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.15); /* light glass effect */
+  transition: all 0.4s ease;
+  z-index: 1000;
+}
+
+/* NAVBAR AFTER SCROLL */
+nav.scrolled {
+  background: #ff3d68; /* BRIGHT PINK */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* LOGO */
+.logo {
+  color: #ffffff;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+/* MENU */
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 19px;
+  transition: all 0.3s ease;
+}
+
+/* HOVER EFFECT (VERY VISIBLE) */
+.nav-links a:hover {
+  color: #111827;
+  background: #ffd369;
+  padding: 6px 12px;
+  border-radius: 6px;
+}
+
+/* TEXT COLOR CHANGE ON SCROLL */
+nav.scrolled a {
+  color: #ffffff;
+}
+.section {
+  height: 100vh;
+  padding: 120px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* HOME (already colorful, keep it) */
+.home {
+  
+  color: white;
+  text-align: center;
+}
+
+/* ABOUT SECTION */
+#about {
+  
+  color: #ffffff;
+}
+
+/* SERVICES SECTION */
+#services {
+  
+  color: #ffffff;
+}
+
+/* CONTACT SECTION */
+#contact {
+  
+  color: #ffffff;
+}
+
+
+.home {
+ 
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.section h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.section p {
+  font-size: 18px;
+  max-width: 700px;
+}
+
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+  }
+}
+/* ACTIVE MENU LINK */
+.nav-links a.active {
+  background: #ffffff;
+  color: #111827;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
